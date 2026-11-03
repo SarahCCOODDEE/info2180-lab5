@@ -1,1 +1,116 @@
 /* Add your own styles */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5e9ff;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(236, 72, 153, 0.35), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(147, 51, 234, 0.4), transparent 45%),
+        radial-gradient(circle at 50% 90%, rgba(192, 38, 211, 0.3), transparent 50%),
+        #12062b;
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(90deg, #7e22ce, #db2777);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(219, 39, 119, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px #f0abfc;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+#controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#controls label {
+    display: none;
+}
+
+#country {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #c084fc;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+#country::placeholder {
+    color: #d8b4fe;
+}
+
+#country:focus {
+    outline: none;
+    box-shadow: 0 0 10px #e879f9;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+#lookup {
+    background: linear-gradient(90deg, #ec4899, #d946ef);
+}
+
+#lookupCities {
+    background: linear-gradient(90deg, #8b5cf6, #6366f1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 14px #e879f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(30, 10, 60, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(192, 132, 252, 0.3);
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(90deg, #9333ea, #db2777);
+    color: #fff;
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background: rgba(168, 85, 247, 0.12);
+}
+
+tr:hover td {
+    background: rgba(236, 72, 153, 0.25);
+}
